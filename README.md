@@ -78,7 +78,9 @@ The tests cover compatible matching, area mismatch, insufficient quantity, expir
 
 ## Data and fieldwork integrity
 
-The only source of app records is `backend/data.csv`. It currently contains the header row only. **Do not count generated sample records as fieldwork.** The take-home assignment requires 20+ real entries collected by you. Add records through the form only after personally observing or confirming them with the people involved.
+The app reads and writes `backend/data.csv`, which starts with a header row only. **Do not count generated sample records as fieldwork.** The take-home assignment requires 20+ real entries collected by you. Add records through the form only after personally observing or confirming them with the people involved.
+
+For a visual walkthrough only, `backend/demo-data.csv` contains 20 clearly labelled synthetic rows (6 feeding points, 7 food offers and 7 volunteers). To preview the dashboard, first back up your real `backend/data.csv`, then copy `backend/demo-data.csv` over it. Restore your real file before collecting or submitting fieldwork. Never submit the demo rows as real observations.
 
 Record broad area labels rather than private home addresses. Use names/aliases only with permission; do not put phone numbers or sensitive personal data in this public repository.
 

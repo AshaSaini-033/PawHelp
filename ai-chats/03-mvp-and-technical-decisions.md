@@ -38,11 +38,11 @@ A reminder can be calculated from the feeder-entered last-confirmed visit and th
 
 It must be labelled as a **check-in reminder**, not as proof that animals were not fed. Another person may have visited without updating the record, or the interval may no longer be correct.
 
-## 5. Why Python + Streamlit + CSV?
+## 5. Why React + Node.js + CSV?
 
-The project was built as a 24-hour prototype. Python was already a familiar language, Streamlit provides a quick interactive interface, and CSV keeps the collected records transparent and easy to inspect.
+The current implementation uses React with Vite for the interface, Node.js with Express for the API, and one CSV file for transparent local storage. This keeps the project in JavaScript across the frontend and backend and makes the codebase easier for the developer to understand and explain.
 
-A React + Node.js architecture could be considered later if fieldwork shows a real need for multiple users, authentication, concurrent updates or a deployed public service. It was not necessary to demonstrate the first matching workflow.
+CSV remains suitable for a small single-user prototype. If fieldwork later shows a need for multiple people editing records at the same time, authentication or reliable hosted access, a database and stronger access controls should be considered.
 
 ## 6. What was intentionally left out?
 
