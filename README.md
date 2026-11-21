@@ -125,7 +125,7 @@ The project does not claim that local feeders have this problem until your conve
 
 - Record only food that a knowledgeable local feeder says is suitable. Do not use PawHelp as dietary or veterinary advice.
 - Never use spoiled/unsafe food or place food where it creates a road or public-safety hazard. Follow local rules and the guidance of experienced animal-welfare people.
-- An offer is not proof of collection, delivery, or consumption. A candidate match is not an assignment; a claimed task is not confirmation.
+- An offer is not proof of collection, delivery, or consumption. A candidate match is not an assignment; a verbal agreement to help is not proof of delivery.
 - If nobody is available, the app cannot solve the transport gap. The need remains visible but unresolved.
 - Records may be outdated, duplicated, inaccurate, or entered in error. Verify with the person before acting.
 - Exact feeding locations, names, photos, and any identifying detail should be shared publicly only with permission. Use broad area labels and aliases in the app.
