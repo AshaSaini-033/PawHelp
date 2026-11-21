@@ -167,7 +167,8 @@ PawHelp/
 - [ ] Run the app against your own records; add genuine screenshots and describe the actual output.
 - [ ] Record and link your 3-minute demo.
 - [ ] Write the half-page personal reflection yourself.
-- [ ] Export the actual AI chats into `ai-chats/`.
+- [x] Add structured AI assistance notes in `ai-chats/` covering pros/cons, risk mitigations, Kashmir/NIT Srinagar feasibility factors and MVP decisions.
+- [ ] If the evaluator requires raw transcripts, export the actual ChatGPT conversations separately; the notes are summaries, not verbatim chat exports.
 - [ ] Keep making honest, incremental commits as you complete the work; do not manufacture timestamps or field evidence.
 
 ---
