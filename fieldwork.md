@@ -35,7 +35,7 @@ Only include photographs you personally captured and have permission to publish.
 - **How values were counted / confirmed:** [fill in]
 - **Units used:** [keep quantities comparable]
 - **Missing / uncertain values:** [explain; do not guess]
-- **Total real entries collected:** [count rows in the CSV files]
+- **Total real entries collected:** [count rows in the CSV file]
 
 The unified `backend/data.csv` starts with a header only. Add at least 20 genuine entries yourself, as required by the assignment. Each row must be a real feeding-point record, a confirmed food offer, or a person's confirmed volunteer availability—not a hypothetical example. The `record_type` column identifies the row type.
 
