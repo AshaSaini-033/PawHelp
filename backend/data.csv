@@ -1,1 +1,9 @@
 record_type,record_id,recorded_at,area_label,food_type,quantity,quantity_unit,last_confirmed_visit,visit_interval_hours,available_from,available_until,valid_until,person_alias,status,notes
+observation,OBS-001,,Nescafe area,,,,,,,,,user-reported,unverified,"Dogs approach when they see food; date, time and count not yet recorded"
+observation,OBS-002,,Cafeteria area,,,,,,,,,user-reported,unverified,"Dogs are present around the cafeteria and food area; date, time and count not yet recorded"
+observation,OBS-003,,Hostel area,,,,,,,,,user-reported,unverified,"Cats are present around the hostel; date, time and count not yet recorded"
+observation,OBS-004,,Nearby parks,,,,,,,,,user-reported,unverified,"Dogs are seen in some parks; exact park, date, time and count not yet recorded"
+observation,OBS-005,,School and college roads,,,,,,,,,user-reported,unverified,"Community animals are seen near school and college roads; species, date, time and count need verification"
+observation,OBS-006,,Roadside garbage areas,,,,,,,,,user-reported,unverified,"Dogs are seen near garbage areas; date, time and count not yet recorded"
+observation,OBS-007,,Nearby streets,,,,,,,,,user-reported,unverified,"Cows and calves are seen on streets; date, time and count not yet recorded"
+observation,OBS-008,,Nearby streets,,,,,,,,,user-reported,unverified,"Cats are also seen roaming around streets; date, time and count not yet recorded"
