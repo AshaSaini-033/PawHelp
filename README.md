@@ -61,6 +61,24 @@ These eight preliminary reports are stored in `backend/data.csv` as `observation
 
 **Step 6 — Confirm what happened.** The feeder or volunteer should verify the visit/delivery. A generated suggestion is not evidence that food was delivered or eaten.
 
+## Visual walkthroughs
+
+### Animated journey
+
+The moving marker below illustrates how information can travel from a community sighting to a human-confirmed visit. It is an explanatory SVG animation, not a live activity indicator.
+
+![Animated PawHelp journey](docs/images/animated-journey.svg)
+
+### Static workflow and matching diagrams
+
+![PawHelp workflow](docs/images/workflow.svg)
+
+![PawHelp matching logic](docs/images/matching-logic.svg)
+
+### Animal gallery in the app
+
+The dashboard includes an illustrative gallery for street dogs, cats, cows/calves and other community animals. These are emoji illustrations, not documentary photographs or evidence from fieldwork. Only real, consented field photos should be added to the `evidence/` folder.
+
 ## 5. Matching logic
 
 ![PawHelp matching logic](docs/images/matching-logic.svg)
