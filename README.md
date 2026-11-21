@@ -148,6 +148,7 @@ PawHelp/
 ├── docs/
 │   ├── images/                # Workflow and matching diagrams
 │   └── screenshots/           # Add genuine app screenshots here
+├── evidence/                 # Add your timestamped fieldwork photos here (with permission)
 ├── tests/
 │   └── test_engine.py
 ├── ai-chats/                  # Add your actual AI chat export here
