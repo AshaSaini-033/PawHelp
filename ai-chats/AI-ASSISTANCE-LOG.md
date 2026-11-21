@@ -15,7 +15,7 @@ These files are **structured summaries of the discussions**, not verbatim export
    - A field-validation plan and conditions under which the idea may or may not work.
 
 3. [MVP and technical decisions](03-mvp-and-technical-decisions.md)
-   - Why the MVP uses Python, Streamlit and CSV.
+   - Why the MVP uses React, Node.js, Express and CSV; how the matching API and validation are structured.
    - Matching rules, overdue reminders, limitations, tests and intentionally excluded features.
 
 ## How AI was used
