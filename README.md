@@ -1,150 +1,176 @@
+<div align="center">
+
 # 🐾 PawHelp
-### A local community-dog feeding coordination tool
+### Community feeding coordination for local street dogs
 
-PawHelp helps a small local community coordinate **safe food contributions, available volunteers, and recurring feeding-point visits** for community dogs.
+**A small local workflow to connect a confirmed feeding need, a real food offer, and a willing nearby volunteer.**
 
-> **The problem we are testing:** food offers, feeding needs, and volunteer availability may be scattered across conversations. A feeder can have difficulty knowing which nearby point needs help and whether anyone has accepted the task. PawHelp brings those updates into one simple workflow.
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white) ![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![Data](https://img.shields.io/badge/Data-First--hand%20CSV-168C7B) ![Status](https://img.shields.io/badge/Status-Local%20MVP-F2B45B)
 
-**Important:** This is a coordination aid, not an animal-rescue service, veterinary tool, or guarantee that a feeding request will be fulfilled.
+</div>
 
 ---
 
-## ✨ What the MVP does
+## The idea
 
-- **Feeding points:** record a locally observed feeding location and its visit status.
-- **Food offers:** record food type, quantity, safe-use note, and donor contact/alias.
-- **Volunteer commitments:** let an available volunteer claim an open task.
-- **Nearby matching:** rank candidate offers/tasks using the local area and compatibility fields supplied by the user.
-- **Visit tracking:** move a task through open → claimed → delivered → confirmed.
-- **Overdue visibility:** highlight feeding points whose next check is due or whose last visit is not confirmed.
-- **Data quality checks:** reject malformed rows and flag incomplete or inconsistent entries instead of silently treating them as facts.
+People who regularly feed community dogs may coordinate food, locations, and helping hands through separate conversations. A feeder may know a point needs a visit, while a donor has suitable food and another person is free to help—but those pieces of information do not always meet.
 
-## 🧭 How it works
+**PawHelp makes those local records visible in one simple board.** It highlights check-ins that appear overdue and suggests compatible combinations of feeding point + food offer + available volunteer.
 
-![PawHelp workflow](docs/images/workflow.svg)
+> **This is a coordination tool, not a rescue or veterinary service.** It cannot create volunteers, guarantee a delivery, decide whether an animal is hungry, or prove that food was eaten.
 
-1. A feeder or coordinator reports a real feeding-point need.
-2. A donor records a suitable food contribution, or a volunteer records availability.
-3. PawHelp shows compatible open tasks and possible matches.
-4. A volunteer explicitly claims a task. An unclaimed task stays open.
-5. The feeder/coordinator confirms the visit or delivery. Only then is it marked confirmed.
+## How the workflow works
 
-## 🖥️ Screenshots
+![PawHelp workflow — report a need, offer food, match, claim, confirm](docs/images/workflow.svg)
 
-> Add genuine screenshots of the running application here after you run it. Do not use mockups as proof of a working feature.
+1. A feeder confirms a real feeding point and what is needed.
+2. A donor records a real food offer, including quantity and expiry.
+3. PawHelp checks whether the records are compatible.
+4. A volunteer who is actually available can be contacted and agree to help.
+5. The feeder/coordinator confirms what happened. A suggestion is never treated as a completed visit.
 
-| Dashboard | Match details |
-|---|---|
-| ![Dashboard placeholder](docs/images/dashboard-placeholder.svg) | ![Matching placeholder](docs/images/matching-placeholder.svg) |
+## How the matching logic works
 
-## 🧱 Tech stack
+![PawHelp matching logic — three record types from one CSV, compatibility filters and outputs](docs/images/matching-logic.svg)
 
-- **Python** for the small matching and data-validation service
-- **CSV** for transparent, locally collected MVP data
-- **React** for the user interface (planned app layer)
-- **Node.js / Express** for an API layer when the workflow is validated
+A candidate match is shown only when all these checks pass:
 
-The first deliverable prioritises a working data-driven workflow over unnecessary infrastructure. No external dataset, animal-recognition model, payment gateway, or map API is required.
+- The feeding point is marked `active` and the food offer is `available`.
+- All three records use the same manually entered `area_label`.
+- Food category and quantity unit match.
+- The available quantity is at least the quantity recorded as needed.
+- The offer has not expired.
+- The volunteer availability window includes the app current local time.
 
-## 🚀 Run locally
+The overview also flags a feeding point when `last_confirmed_visit + visit_interval_hours` is earlier than the current local time. This is a reminder based on entered records, **not proof** that a point was missed.
 
-The data/matching MVP lives in `backend/`.
+## Current scope
 
-```bash
-cd backend
-python -m venv .venv
-```
+### Included in this MVP
+- Dashboard with counts, due/overdue check-in reminders, and candidate match suggestions.
+- Add and view feeding points, food offers, and volunteer availability.
+- CSV-based storage that is easy to inspect and explain during the follow-up call.
+- Row validation for required fields, positive quantities, timestamps, and supported statuses.
+- Six unit tests for the matching rules and validation.
 
-Activate the environment:
+### Not included intentionally
+- GPS/live maps or true distance calculations. `area_label` equality is only a simple local approximation.
+- Login, payments, chat, push notifications, or automatic dispatch.
+- Combining multiple partial food offers into one request.
+- Automatic reservation of offers or marking a delivery complete.
+- Animal recognition, hunger detection, diagnosis, or feeding/diet recommendations.
 
-**Windows PowerShell**
-```powershell
-.venv\Scripts\Activate.ps1
-```
+## Tech stack
 
-**macOS / Linux**
-```bash
-source .venv/bin/activate
-```
+| Part | Choice | Why |
+|---|---|---|
+| App/UI | Python + Streamlit | A small interactive interface without spending the assignment on frontend setup |
+| Data processing | Python + Pandas | Readable tables and transparent matching logic |
+| Storage | One typed CSV (`backend/data.csv`) | The required raw data stays in a single inspectable file |
+| Tests | Python `unittest` | Core rules can be checked without a live service or external API |
 
-Install dependencies and start:
+No external dataset, Kaggle data, or API data is used. The unified `backend/data.csv` starts with **a header only**; populate it with your own verified fieldwork records.
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
-```
+## Run locally
 
-The app reads `data/feeding_points.csv`, `data/food_offers.csv`, and `data/volunteers.csv`. Replace the starter headers with your own verified records before using it for a real local workflow.
+**Requirements:** Python 3.10 or newer.
 
-## 📁 Repository structure
+1. Clone the repository: `git clone https://github.com/AshaSaini-033/PawHelp.git`
+2. Enter the folder: `cd PawHelp`
+3. Create a virtual environment: `python -m venv .venv`
+4. Activate it:
+   - Windows PowerShell: `.venv\Scripts\Activate.ps1`
+   - macOS / Linux: `source .venv/bin/activate`
+5. Install packages: `pip install -r backend/requirements.txt`
+6. Start the app: `cd backend` then `streamlit run app.py`
+
+Open the local URL printed by Streamlit (normally `http://localhost:8501`). The app reads and writes the unified `backend/data.csv` file. Each row has a `record_type` of `feeding_point`, `food_offer`, or `volunteer`.
+
+### Run the tests
+
+From the repository root, run: `python -m unittest discover -s tests -v`.
+
+The current automated test suite checks compatible matching, area mismatch, quantity-unit mismatch, unavailable volunteers, overdue reminders, and invalid quantity input.
+
+## Data format
+
+| `record_type` | One row represents | Fields that matter |
+|---|---|---|
+| `feeding_point` | One real point confirmed by a feeder | Area, food need, quantity + unit, last confirmed visit, check interval |
+| `food_offer` | One food contribution confirmed by its donor | Area, food category, quantity + unit, valid-until time |
+| `volunteer` | One person confirmation of an availability window | Area, available-from and available-until times |
+
+All records live in **one raw file: `backend/data.csv`**. Timestamps are entered in the computer local time as `YYYY-MM-DD HH:MM`. Quantity units must be comparable (for example, do not compare kilograms with portions). Use broad area labels, not private home addresses. Do not put phone numbers or sensitive personal data in this public CSV file.
+
+## Current output with the repository blank CSV template
+
+The committed `backend/data.csv` contains a header and no observations. With no real records, the app shows zero counts, no overdue points, and the empty-state message **No complete match is available right now.** That is expected until real fieldwork entries are entered. Do not add invented data to make the dashboard look busy.
+
+After collecting the records, run the app again and add a screenshot of the genuine output to `docs/screenshots/`. Replace this section with a brief description of what your real data produced.
+
+## Fieldwork and data integrity
+
+This project is for a one-day take-home assignment that requires a problem observed within walking distance, a real person who is helped, and at least 20 first-hand data entries.
+
+- **Place and visit date:** Complete in `fieldwork.md` after your visit.
+- **Person helped (name + role):** Complete with their permission.
+- **20+ real entries:** Collect and enter them yourself; the unified `backend/data.csv` is a blank template.
+- **Evidence:** Add two timestamped photos you captured, with permission, and describe them in `fieldwork.md`.
+- **Research:** Complete `research.md` after checking two sources and two existing solutions with the person.
+- **Reflection:** Write `reflection.md` yourself. The assignment says this part must not be AI-written.
+
+The project does not claim that local feeders have this problem until your conversation confirms it. If your fieldwork shows the actual bottleneck is different, change the tool to fit the person rather than forcing the person to fit the app.
+
+## Safety, trust, and limitations
+
+- Record only food that a knowledgeable local feeder says is suitable. Do not use PawHelp as dietary or veterinary advice.
+- Never use spoiled/unsafe food or place food where it creates a road or public-safety hazard. Follow local rules and the guidance of experienced animal-welfare people.
+- An offer is not proof of collection, delivery, or consumption. A candidate match is not an assignment; a claimed task is not confirmation.
+- If nobody is available, the app cannot solve the transport gap. The need remains visible but unresolved.
+- Records may be outdated, duplicated, inaccurate, or entered in error. Verify with the person before acting.
+- Exact feeding locations, names, photos, and any identifying detail should be shared publicly only with permission. Use broad area labels and aliases in the app.
+
+## Demo video
+
+_Add your genuine 3-minute screen recording here after you have run the app using your collected records._
+
+## Repository guide
 
 ```text
 PawHelp/
 ├── backend/
-│   ├── app.py
-│   ├── matching.py
-│   ├── data_validation.py
+│   ├── app.py                 # Streamlit user interface
+│   ├── matching.py            # Explainable match + overdue logic
+│   ├── validation.py          # CSV loading and row validation
 │   ├── requirements.txt
-│   └── data/
-│       ├── feeding_points.csv
-│       ├── food_offers.csv
-│       └── volunteers.csv
+│   ├── .streamlit/config.toml  # UI theme
+│   └── data.csv               # 20+ first-hand typed records (header only initially)
 ├── docs/
-│   └── images/
-├── research.md
-├── fieldwork.md
-├── reflection.md
-├── ai-chats/
+│   ├── images/                # Workflow and matching diagrams
+│   └── screenshots/           # Add genuine app screenshots here
+├── tests/
+│   └── test_engine.py
+├── ai-chats/                  # Add your actual AI chat export here
+├── research.md                # Fill with your real research
+├── fieldwork.md               # Fill after your real visit
+├── reflection.md              # Write yourself, without AI
 └── README.md
 ```
 
-## 📍 Fieldwork and data integrity
+## Next steps before submitting
 
-This project is being developed for a one-day, real-world take-home assignment. The project must be grounded in a place visited by the developer and a conversation with one real person who is not the developer.
-
-- **Area visited:** _Fill in after the visit_
-- **Date and time:** _Fill in from actual field notes_
-- **Person helped:** _Name and role, with their permission_
-- **Data:** at least 20 real entries collected first-hand
-- **Evidence:** two timestamped photographs, stored only with appropriate permission
-
-The repository intentionally does **not** contain fabricated observations, names, interview quotes, photos, or sample measurements. Keep identifying details private when consent is not available; do not publish anyone's phone number or exact sensitive location.
-
-See [research.md](research.md), [fieldwork.md](fieldwork.md), and the CSV collection notes.
-
-## 🛡️ Safety, privacy, and limitations
-
-- Use only food types and portions considered suitable by a knowledgeable local feeder or animal-welfare professional. Do not treat this tool as dietary or veterinary advice.
-- Do not feed spoiled food, leave food in roads, or approach an unfamiliar/agitated animal. Follow local rules and seek an experienced feeder's guidance.
-- A listed food offer is not proof that food was delivered or eaten.
-- A claimed task is not complete until the feeder/coordinator confirms it.
-- If no volunteer is available, the request remains **open**; PawHelp cannot create people, transport, or food.
-- Area labels should be approximate. Do not publicly expose private homes, phone numbers, or sensitive feeding locations.
-- User-entered data can be wrong, outdated, duplicated, or malicious. Verify it before acting.
-
-## 🧪 Validation and known limitations
-
-The matching logic is a transparent heuristic, not an AI prediction. It can only work with the fields and records entered by people. It does not determine whether an animal is hungry, sick, safe to approach, or medically in need.
-
-After fieldwork, document mismatches between what the feeder actually needs and what the app currently models. The tool should support the feeder's judgement, not replace it.
-
-## 🎥 Demo
-
-_Add a link to your genuine 3-minute screen recording after recording the working app._
-
-## 🗺️ Next steps
-
-- [ ] Validate the problem with one regular local feeder/coordinator.
-- [ ] Record 20+ first-hand data entries and document the collection method.
-- [ ] Add genuine timestamped fieldwork photos with consent.
-- [ ] Run the app against the collected CSV and capture its real output.
-- [ ] Record the 3-minute demo and complete the personal reflection.
-- [ ] Export the AI conversations used for this work into `ai-chats/`.
-
-## 📄 Assignment notes
-
-This repository is designed to keep research, fieldwork evidence, build instructions, limitations, and reflection visible. The reflection must be written by the developer without AI, as required by the assignment.
+- [ ] Confirm the problem and the exact person with your local feeder/coordinator.
+- [ ] Complete `research.md` and `fieldwork.md` with real details.
+- [ ] Collect at least 20 genuine entries in `backend/data.csv` and explain how each record type was collected.
+- [ ] Add two timestamped photos with consent (avoid faces/private details).
+- [ ] Run the app against your own records; add genuine screenshots and describe the actual output.
+- [ ] Record and link your 3-minute demo.
+- [ ] Write the half-page personal reflection yourself.
+- [ ] Export the actual AI chats into `ai-chats/`.
+- [ ] Keep making honest, incremental commits as you complete the work; do not manufacture timestamps or field evidence.
 
 ---
 
-Made with care for community dogs and the people who look after them. 🐾
+<div align="center">
+**Built with care for community dogs and the people who look after them. 🐾**
+</div>
