@@ -1,0 +1,21 @@
+record_id,record_type,area_label,animal_type,observed_date,observed_time,observed_count,behaviour,verification_status,notes
+D001,observation,Nescafe area,dog,2026-11-20,08:15,3,approached when food was visible,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D002,observation,Nescafe area,dog,2026-11-20,13:10,2,near food seating area,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D003,observation,Cafeteria,dog,2026-11-20,09:00,4,resting near entrance,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D004,observation,Cafeteria,cat,2026-11-20,14:20,1,near waste collection point,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D005,observation,Hostel,cat,2026-11-20,07:40,2,near hostel entrance,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D006,observation,Hostel,dog,2026-11-20,19:05,1,passing through lane,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D007,observation,College road,dog,2026-11-20,08:30,5,near roadside shops,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D008,observation,College road,cow,2026-11-20,11:45,2,standing beside road,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D009,observation,School surroundings,dog,2026-11-20,12:30,3,near boundary wall,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D010,observation,School surroundings,cow,2026-11-20,15:10,1,near roadside greenery,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D011,observation,Street lane,dog,2026-11-20,07:20,4,resting in shaded area,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D012,observation,Street lane,cat,2026-11-20,17:35,2,near residential buildings,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D013,observation,Garbage point,dog,2026-11-20,06:55,3,searching around waste area,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D014,observation,Garbage point,cow,2026-11-20,10:25,1,near discarded food,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D015,observation,Park,dog,2026-11-20,16:00,6,resting near walking path,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D016,observation,Park,cat,2026-11-20,16:40,1,near bushes,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D017,observation,Campus road,calf,2026-11-20,09:50,1,walking beside cow,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D018,observation,Market-side street,dog,2026-11-20,18:15,5,near shop fronts,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D019,observation,Hostel back lane,cat,2026-11-20,20:10,3,near parked vehicles,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
+D020,observation,Cafeteria back area,dog,2026-11-20,21:00,2,near waste bins,SYNTHETIC_DEMO,Illustrative sample only; replace after direct observation
