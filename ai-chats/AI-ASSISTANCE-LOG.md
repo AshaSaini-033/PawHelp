@@ -1,15 +1,30 @@
-# AI assistance log
+# AI assistance notes
 
-This file is a concise index, not a substitute for the required export of the actual AI conversations. Export the relevant chat(s) from your ChatGPT account and place the unedited export in this folder before submission.
+This folder documents how AI was used while planning and building PawHelp.
 
-## Assistance used in this build
+These files are **structured summaries of the discussions**, not verbatim exported ChatGPT transcripts. Topic prompts are reconstructed for readability. They should not be represented as exact quotations.
 
-- Discussed narrowing PawHelp to local community-dog feeding coordination rather than emergency rescue dispatch.
-- Reviewed the assignment requirements and identified that real fieldwork, one named person, 20+ first-hand entries, timestamped photos, a personal reflection, and a visible Git history cannot be fabricated by AI.
-- Planned a small Streamlit + CSV MVP with transparent matching and conservative status language.
-- Drafted the initial code structure, validation, tests, README, and flow diagrams.
+## Discussion notes
 
-## Still to add
+1. [Idea evaluation — pros, cons and how to address risks](01-idea-evaluation.md)
+   - Why the project was narrowed from rescue dispatch to community-dog feeding coordination.
+   - Benefits, risks, mitigations and what the app must not claim.
 
-- [ ] Export the actual ChatGPT conversation(s) and save them here.
-- [ ] Keep the export unedited; do not claim this summary is the complete transcript.
+2. [Kashmir / NIT Srinagar feasibility assessment](02-kashmir-nit-srinagar-feasibility.md)
+   - Preliminary questions about winter weather, walking access, student schedules, campus rules, food storage, local networks and community acceptance.
+   - A field-validation plan and conditions under which the idea may or may not work.
+
+3. [MVP and technical decisions](03-mvp-and-technical-decisions.md)
+   - Why the MVP uses Python, Streamlit and CSV.
+   - Matching rules, overdue reminders, limitations, tests and intentionally excluded features.
+
+## How AI was used
+
+AI helped brainstorm and challenge the idea, identify practical risks, compare possible scopes, think through local feasibility factors, and plan the implementation and documentation. The final problem statement and local conclusions must be checked against the student's own observations and conversation with a real feeder.
+
+## Important distinction
+
+- These notes are not a raw chat export.
+- They do not prove that fieldwork or local interviews have happened.
+- No local survey, feeder availability, campus permission or animal-welfare approval is claimed here.
+- Add the genuine, unedited ChatGPT export separately if the assignment requires the original conversation history. Do not fabricate messages or dates.
