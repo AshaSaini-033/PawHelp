@@ -1,0 +1,9 @@
+observation_id,reported_by,area_label,animal_type,observation,observed_date,observed_time,animal_count,verification_status
+OBS-001,user,Nescafe area,dogs,"Dogs approach when they see food",,,,"User-reported; needs dated field verification"
+OBS-002,user,Cafeteria area,dogs,"Dogs are present around the cafeteria and food area",,,,"User-reported; needs dated field verification"
+OBS-003,user,Hostel area,cats,"Cats are present around the hostel",,,,"User-reported; needs dated field verification"
+OBS-004,user,Nearby parks,dogs,"Dogs are seen in some parks",,,,"User-reported; needs dated field verification"
+OBS-005,user,School and college roads,mixed community animals,"Animals are seen near roads around schools and colleges",,,,"User-reported; species and count need field verification"
+OBS-006,user,Roadside garbage areas,dogs,"Dogs are seen near garbage areas",,,,"User-reported; needs dated field verification"
+OBS-007,user,Nearby streets,cows and calves,"Cows and calves are seen on streets",,,,"User-reported; needs dated field verification"
+OBS-008,user,Nearby streets,cats,"Cats are also seen roaming around streets",,,,"User-reported; needs dated field verification"
