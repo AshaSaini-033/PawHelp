@@ -76,11 +76,11 @@ npm test
 
 The tests cover compatible matching, area mismatch, insufficient quantity, expired offers, unavailable volunteers, overdue reminders and invalid quantities.
 
-## Data and fieldwork integrity
+## Initial field observations and data integrity
 
-The app reads and writes `backend/data.csv`, which starts with a header row only. **Do not count generated sample records as fieldwork.** The take-home assignment requires 20+ real entries collected by you. Add records through the form only after personally observing or confirming them with the people involved.
+`fieldwork/initial-observations.csv` records the locations and animal sightings you have described so far: Nescafe, cafeteria, hostel, parks, school/college roads, roadside garbage areas and nearby streets. These are **user-reported preliminary observations**, not independently verified field records. Dates, times and counts are intentionally blank because they have not yet been provided.
 
-For a visual walkthrough only, `backend/demo-data.csv` contains 20 clearly labelled synthetic rows (6 feeding points, 7 food offers and 7 volunteers). To preview the dashboard, first back up your real `backend/data.csv`, then copy `backend/demo-data.csv` over it. Restore your real file before collecting or submitting fieldwork. Never submit the demo rows as real observations.
+`backend/data.csv` is the app's operational dataset and currently contains only its header. Do not treat the preliminary observations as 20 fieldwork entries or as confirmed feeding needs, food offers or volunteer availability. The assignment's 20+ real entries still need to be collected and dated by you during fieldwork.
 
 Record broad area labels rather than private home addresses. Use names/aliases only with permission; do not put phone numbers or sensitive personal data in this public repository.
 
@@ -116,6 +116,7 @@ PawHelp/
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── style.css
+├── fieldwork/initial-observations.csv
 ├── docs/images/
 ├── evidence/
 ├── ai-chats/
@@ -126,6 +127,6 @@ PawHelp/
 
 <div align="center">
 
-**Built with care for community dogs and the people who look after them. 🐾**
+**Built with care for community animals and the people who look after them. 🐾**
 
 </div>
