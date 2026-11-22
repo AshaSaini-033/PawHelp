@@ -1,23 +1,23 @@
 # Research Notes — PawHelp
 
-## 1. Problem statement (working hypothesis)
+## 1. Problem statement (working hypothesis based on the author's report)
 
 1. During a user-reported 20–30 minute visit to NIT Srinagar campus on 2026-11-20, the author covered the Nescafe area, cafeteria, hostel, college roads, school/college surroundings, streets, park and garbage points.
-2. The author reported the presence of dogs, cats, cows and calves during this visit.
-3. These observations establish the project context, but the author has not yet supplied per-area counts, exact sighting times or a breakdown of animal behaviour.
-4. The project still needs to establish through a real conversation how a feeder currently coordinates food, locations and volunteer availability, and what difficulty they actually face.
+2. The author reported dogs, cats, cows and calves around these campus areas.
+3. According to the author's account, there is no dedicated caretaker known to them; students themselves give food to the animals, and campus workers also sometimes provide food.
+4. This suggests that feeding is informal and depends on individual students' and workers' initiative; the frequency, coordination gaps and availability of helpers still need validation.
 5. PawHelp is a small community coordination prototype for recording feeding points, food offers and volunteer availability, then suggesting compatible matches.
 
-**Evidence boundary:** Visit date, duration, areas and animal types above are author-reported. Exact times, counts, a feeder interview, photos and 20 individual raw records have not yet been documented here. Do not treat the working hypothesis as proof of a confirmed local coordination problem.
+**Evidence boundary:** The campus visit details and informal feeding pattern are author-reported. They are not a campus-wide survey or a verified statement from campus administration. Exact animal counts, feeding frequency, named interview, photos and 20 individual raw records have not yet been documented.
 
 ## 2. Existing alternatives and their fit
 
-| Existing alternative | What it can do | Possible limitation PawHelp is testing | What fieldwork must confirm |
+| Existing alternative / current practice | What it provides | Possible limitation to validate | What to ask or observe |
 |---|---|---|---|
-| Informal WhatsApp / neighbourhood group | People can quickly post a sighting, ask for food or coordinate volunteers. | Requests, quantities, locations and expiry/availability details can become scattered in chat; a later volunteer may have to search old messages. | Does the target feeder already use a group? What information gets missed? Would a structured list actually help? |
-| Direct calls / word-of-mouth coordination | A feeder can contact a known person and coordinate quickly. | It depends on knowing the right person and remembering who offered what; it may not provide a shared view for several helpers. | How many people are involved? Is direct contact already reliable? What is the one repeated coordination problem? |
+| Students giving food on their own | Immediate help when an individual student notices an animal and has food available. | Help may depend on who happens to be present; other students may not know whether an animal has already been fed or where help is needed. | Do students coordinate with one another? Are there regular feeding times or is it spontaneous? |
+| Campus workers sometimes giving food | Another informal source of food and support around campus. | It is not yet clear whether workers coordinate with students or with each other, or whether availability is predictable. | Which workers help, how often, and do they share information with students? |
 
-These are alternatives to investigate, not claims that they are absent or ineffective locally. If the person says their current method works well, record that honestly and narrow or change the project.
+These are based on the author's report and are hypotheses about coordination, not proven shortcomings. If students and workers already coordinate effectively, the product should reflect that rather than invent a problem.
 
 ## 3. Sources reviewed
 
@@ -49,21 +49,21 @@ These are alternatives to investigate, not claims that they are absent or ineffe
 - Replace a conversation with a feeder or local animal-welfare organisation.
 - Provide veterinary diagnosis, emergency response or legal advice.
 - Guarantee that a food offer is safe, appropriate or delivered.
-- Prove that a local coordination gap exists before fieldwork confirms it.
+- Prove a campus-wide coordination gap without further validation.
 
-## 5. Fieldwork questions to validate the idea
+## 5. Questions to validate the current informal system
 
-1. How do you currently decide where and when to feed or help animals?
-2. Do you coordinate with anyone else? If yes, through which method?
-3. What information is most often missing when someone offers help?
-4. Would a shared list of points, food offers and volunteer timings be useful, or would it add extra work?
-5. What is one small change that would make your current process easier?
+1. Do students usually feed animals individually, or do they coordinate with other students?
+2. Do workers and students know when someone else has already fed an animal?
+3. Are there particular areas or times when animals are more likely to need food?
+4. Would a shared list of feeding points, food offers and volunteer timings help, or would it add extra work?
+5. What is one small change that would make the current process easier?
 
-## 6. Decision log — complete after speaking to the person
+## 6. Decision log — complete after follow-up
 
-- Person and role (with permission): [not provided yet]
-- Existing method they actually use: [not provided yet]
-- Specific difficulty they described: [not provided yet]
+- Student/worker spoken to and role (with permission): [not provided yet]
+- Whether feeding is spontaneous or coordinated: [not confirmed]
+- Specific coordination difficulty they described: [not provided yet]
 - Feature they said would help: [not provided yet]
 - Feature they did not need: [not provided yet]
-- Final narrowed problem statement: [rewrite using the interview evidence]
+- Final narrowed problem statement: [rewrite using confirmed feedback]
