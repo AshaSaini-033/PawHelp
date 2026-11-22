@@ -1,6 +1,6 @@
 # Fieldwork Record — PawHelp
 
-> **Status: Partially documented from the user's report; supporting evidence still pending.** The visit details below were supplied by the project author. The conversation, exact timestamps, counts, photographs and 20 raw entries have not yet been supplied here, so they are not invented.
+> **Status: Partially documented from the author's report.** The visit context and informal-care pattern below were reported by the author. A named interview, exact timestamps, counts, photographs and 20 individual raw records have not been supplied, so they are not invented.
 
 ## 1. Visit details (user-reported)
 
@@ -10,35 +10,37 @@
 - **Areas reported:** Nescafe, cafeteria, hostel, college roads, school/college surroundings, streets, park and garbage points
 - **Animal types reported:** Dogs, cats, cows and calves
 - **Exact start and end time:** not recorded
-- **Person spoken to:** not provided yet
-- **Person's role:** not provided yet
 
-The area list records the locations the author says were covered; it does not assign a separate animal count or sighting to every area. Add only details actually remembered or recorded from the visit.
+## 2. Initial finding: informal community feeding (user-reported)
 
-## 2. Conversation notes — still needed
+The author reports that there is no dedicated person known to them who regularly takes responsibility for caring for the campus animals. Instead, care appears to happen informally: students themselves give food to the animals, and campus workers also sometimes provide food.
 
-Write what the person actually said. Paraphrase accurately; use quotation marks only for exact words.
+This is an important project observation: animal feeding may depend on individual students' and workers' initiative rather than a clearly coordinated system. PawHelp is being explored as a way to make feeding points, food offers and volunteer availability easier to organise.
 
-1. **Current process:** [How do they currently arrange food/care?]
-2. **Main difficulty:** [What specifically takes time or goes wrong?]
-3. **What would help:** [What small change would they actually use?]
+**Evidence boundary:** This is the author's account of the situation, not a formal campus-wide survey. Do not claim that no caretaker exists anywhere on campus unless this has been confirmed with the relevant campus staff. No named worker/student interview or exact quotation has been provided yet.
 
-**Person's name or alias (with permission):** [not provided]
-**Person's role:** [not provided]
-**One surprise from the conversation:** [not provided]
-**How this changed the product:** [complete after sharing the conversation details]
+## 3. Conversation / source of information
 
-## 3. Observation log
+- **How this information was obtained:** author-reported observation/understanding during the campus visit; whether a specific person was interviewed has not yet been confirmed.
+- **Person spoken to:** not provided
+- **Person's role:** not provided
+- **Three direct statements:** not provided
+- **One surprise:** informal feeding by students and workers, rather than a known dedicated caretaker, was identified as the current pattern by the author.
+- **Follow-up to validate:** ask one student or worker how feeding is usually arranged, whether people coordinate with one another, and what happens when nobody is available.
 
-The author reported seeing dogs, cats, cows and calves during the visit. Per-area counts, individual sighting times and behaviour notes have not been provided. Do not infer them from the general animal list.
+Do not present this finding as a verbatim quote or as a completed interview.
+
+## 4. Observation log
+
+The author reported dogs, cats, cows and calves around the listed campus areas and described students and workers as the people who provide food informally. Per-area animal counts, exact sighting times and feeding frequency have not been supplied.
 
 | Entry | Date | Time | Area | Animal type | Count | Behaviour / context | Evidence status |
 |---|---|---|---|---|---|---|---|
-| Visit summary | 2026-11-20 | not recorded | NIT Srinagar campus — areas listed above | Dogs, cats, cows, calves | not recorded | General visit summary; no per-area breakdown supplied | User-reported summary |
+| Visit summary | 2026-11-20 | not recorded | NIT Srinagar campus — areas listed above | Dogs, cats, cows, calves | not recorded | General visit summary; informal food-giving by students and workers reported; no per-area breakdown supplied | User-reported summary |
 
 Add at least 20 separate genuine entries if required by the assignment. Each row should represent an actual observation, confirmed food offer or confirmed volunteer availability. Do not split one general summary into invented rows.
 
-## 4. Timestamped photographs — pending
+## 5. Timestamped photographs — pending
 
 - **Photo 1:** not provided
   - Actual capture timestamp: not recorded
@@ -50,7 +52,7 @@ Add at least 20 separate genuine entries if required by the assignment. Each row
 
 Only add photographs personally captured by the author. Avoid identifiable faces, number plates, private-home details and personal information unless explicit permission allows publication.
 
-## 5. Data collection method — pending details
+## 6. Data collection method — pending details
 
 - **What one CSV row represents:** [one actual point check / confirmed food offer / confirmed volunteer availability]
 - **How counts were obtained:** not recorded
@@ -61,13 +63,13 @@ Only add photographs personally captured by the author. Avoid identifiable faces
 
 Keep the real assignment dataset separate from `backend/demo-data.csv`. The latter contains synthetic UI/demo content and must not be reported as field evidence.
 
-## 6. Completion checklist
+## 7. Completion checklist
 
 - [x] Author-reported date, campus, duration, areas and animal types documented.
+- [x] Informal feeding by students and workers documented as an author-reported finding.
+- [ ] Confirm whether a specific student/worker was interviewed and record their role and actual statements.
 - [ ] Exact start/end time supplied, if available.
 - [ ] Per-area observation notes and actual counts recorded.
-- [ ] One real person interviewed; role and three specific statements documented.
-- [ ] One genuine surprise and its effect on the project documented.
 - [ ] Two timestamped photographs added with permission.
 - [ ] At least 20 genuine entries added to the assignment dataset.
 - [ ] Author can explain where and how any selected CSV row was recorded.
