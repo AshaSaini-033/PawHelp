@@ -1,23 +1,25 @@
 # Fieldwork Record — PawHelp
 
-> **Status: Partially documented from the author's report.** The visit context and informal-care pattern below were reported by the author. A named interview, exact timestamps, counts, photographs and 20 individual raw records have not been supplied, so they are not invented.
+> **Status: Partially documented from the author's report.** Visit context and the informal-care pattern below were reported by the author. A named interview, exact timestamps, counts, photographs and 20 individual raw records have not been supplied, so they are not invented.
 
 ## 1. Visit details (user-reported)
 
 - **Date:** 2026-11-20
 - **Place:** NIT Srinagar campus
 - **Reported duration:** 20–30 minutes
-- **Areas reported:** Nescafe, cafeteria, hostel, college roads, school/college surroundings, streets, park and garbage points
+- **Areas where animals were reported:** Around residential/hostel areas, cafeteria, Nescafe, college roads, school/college surroundings, streets, park and garbage points
 - **Animal types reported:** Dogs, cats, cows and calves
 - **Exact start and end time:** not recorded
 
+The author clarified that animals are not limited to one feeding point; they are seen across different campus surroundings, including near residences/hostels and food areas such as the cafeteria and Nescafe. This is a general location description, not a verified species-by-area count.
+
 ## 2. Initial finding: informal community feeding (user-reported)
 
-The author reports that there is no dedicated person known to them who regularly takes responsibility for caring for the campus animals. Instead, care appears to happen informally: students themselves give food to the animals, and campus workers also sometimes provide food.
+The author reports that there is no dedicated person known to them who regularly takes responsibility for caring for the campus animals. Instead, care happens informally: students themselves give food to animals, and campus workers also sometimes provide food.
 
-This is an important project observation: animal feeding may depend on individual students' and workers' initiative rather than a clearly coordinated system. PawHelp is being explored as a way to make feeding points, food offers and volunteer availability easier to organise.
+The animals are encountered across several campus surroundings rather than at one fixed point. This makes it useful to record the specific area where help is needed, while recognising that students' and workers' support is currently informal.
 
-**Evidence boundary:** This is the author's account of the situation, not a formal campus-wide survey. Do not claim that no caretaker exists anywhere on campus unless this has been confirmed with the relevant campus staff. No named worker/student interview or exact quotation has been provided yet.
+**Evidence boundary:** This is the author's account, not a formal campus-wide survey. Do not claim that no caretaker exists anywhere on campus unless confirmed with relevant campus staff. No named worker/student interview or exact quotation has been provided yet.
 
 ## 3. Conversation / source of information
 
@@ -25,18 +27,18 @@ This is an important project observation: animal feeding may depend on individua
 - **Person spoken to:** not provided
 - **Person's role:** not provided
 - **Three direct statements:** not provided
-- **One surprise:** informal feeding by students and workers, rather than a known dedicated caretaker, was identified as the current pattern by the author.
-- **Follow-up to validate:** ask one student or worker how feeding is usually arranged, whether people coordinate with one another, and what happens when nobody is available.
+- **Key finding:** animals are encountered in multiple campus surroundings and students/workers sometimes feed them informally.
+- **Follow-up to validate:** if possible, ask one student or worker how they decide where/when to feed and whether they coordinate with others.
 
 Do not present this finding as a verbatim quote or as a completed interview.
 
 ## 4. Observation log
 
-The author reported dogs, cats, cows and calves around the listed campus areas and described students and workers as the people who provide food informally. Per-area animal counts, exact sighting times and feeding frequency have not been supplied.
+The author reported dogs, cats, cows and calves around the campus areas listed above and described students and workers as people who provide food informally. Per-area animal counts, exact sighting times, species-by-location details and feeding frequency have not been supplied.
 
 | Entry | Date | Time | Area | Animal type | Count | Behaviour / context | Evidence status |
 |---|---|---|---|---|---|---|---|
-| Visit summary | 2026-11-20 | not recorded | NIT Srinagar campus — areas listed above | Dogs, cats, cows, calves | not recorded | General visit summary; informal food-giving by students and workers reported; no per-area breakdown supplied | User-reported summary |
+| Visit summary | 2026-11-20 | not recorded | Multiple campus surroundings: residential/hostel areas, cafeteria, Nescafe, roads, park and other listed areas | Dogs, cats, cows, calves | not recorded | General visit summary; informal food-giving by students and workers reported; no per-area breakdown supplied | User-reported summary |
 
 Add at least 20 separate genuine entries if required by the assignment. Each row should represent an actual observation, confirmed food offer or confirmed volunteer availability. Do not split one general summary into invented rows.
 
