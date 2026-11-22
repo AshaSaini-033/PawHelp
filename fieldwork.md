@@ -1,78 +1,78 @@
-# Fieldwork Record — PawHelp
+# My Fieldwork Record — PawHelp
 
-> **Status: Partially documented from the author's report.** Visit context and the informal-care pattern below were reported by the author. A named interview, exact timestamps, counts, photographs and 20 individual raw records have not been supplied, so they are not invented.
+> **Status: Partially documented from my visit and notes.** I have recorded the visit context and the informal-care pattern I reported. I have not supplied a named interview, exact timestamps, counts, photographs or 20 individual raw records, so I have not added any invented details.
 
-## 1. Visit details (user-reported)
+## 1. My visit details
 
 - **Date:** 2026-11-20
 - **Place:** NIT Srinagar campus
-- **Reported duration:** 20–30 minutes
-- **Areas where animals were reported:** Around residential/hostel areas, cafeteria, Nescafe, college roads, school/college surroundings, streets, park and garbage points
-- **Animal types reported:** Dogs, cats, cows and calves
+- **Duration:** 20–30 minutes
+- **Areas where I reported seeing animals:** Around residential/hostel areas, cafeteria, Nescafe, college roads, school/college surroundings, streets, park and garbage points
+- **Animal types I reported:** Dogs, cats, cows and calves
 - **Exact start and end time:** not recorded
 
-The author clarified that animals are not limited to one feeding point; they are seen across different campus surroundings, including near residences/hostels and food areas such as the cafeteria and Nescafe. This is a general location description, not a verified species-by-area count.
+I clarified that animals are not limited to one feeding point; they are seen across different campus surroundings, including near residences/hostels and food areas such as the cafeteria and Nescafe. This is my general location description, not a verified species-by-area count.
 
-## 2. Initial finding: informal community feeding (user-reported)
+## 2. What I understood about informal community feeding
 
-The author reports that there is no dedicated person known to them who regularly takes responsibility for caring for the campus animals. Instead, care happens informally: students themselves give food to animals, and campus workers also sometimes provide food.
+From what I know, there is no dedicated person responsible for caring for these campus animals. Students themselves give food to animals, and campus workers also sometimes provide food.
 
-The animals are encountered across several campus surroundings rather than at one fixed point. This makes it useful to record the specific area where help is needed, while recognising that students' and workers' support is currently informal.
+I came across animals in several campus surroundings rather than at one fixed point. That is why I wanted PawHelp to let people record the specific area where help may be needed, while keeping in mind that students' and workers' support currently happens informally.
 
-**Evidence boundary:** This is the author's account, not a formal campus-wide survey. Do not claim that no caretaker exists anywhere on campus unless confirmed with relevant campus staff. No named worker/student interview or exact quotation has been provided yet.
+**Evidence boundary:** This is my account, not a formal campus-wide survey. I should not claim that no caretaker exists anywhere on campus unless I confirm it with relevant campus staff. I have not documented a named student/worker interview or an exact quotation.
 
 ## 3. Conversation / source of information
 
-- **How this information was obtained:** author-reported observation/understanding during the campus visit; whether a specific person was interviewed has not yet been confirmed.
+- **How I obtained this information:** My visit and my understanding of the informal feeding practice; I have not documented whether I interviewed a specific person.
 - **Person spoken to:** not provided
 - **Person's role:** not provided
 - **Three direct statements:** not provided
-- **Key finding:** animals are encountered in multiple campus surroundings and students/workers sometimes feed them informally.
-- **Follow-up to validate:** if possible, ask one student or worker how they decide where/when to feed and whether they coordinate with others.
+- **What I noted:** Animals are encountered in multiple campus surroundings, and students/workers sometimes feed them informally.
+- **What I still need to validate:** Ask one student or worker how they decide where/when to feed and whether they coordinate with others.
 
-Do not present this finding as a verbatim quote or as a completed interview.
+I will not present this finding as a verbatim quote or as a completed interview.
 
-## 4. Observation log
+## 4. My observation log
 
-The author reported dogs, cats, cows and calves around the campus areas listed above and described students and workers as people who provide food informally. Per-area animal counts, exact sighting times, species-by-location details and feeding frequency have not been supplied.
+I reported dogs, cats, cows and calves around the campus areas listed above and described students and workers as people who provide food informally. I have not supplied per-area animal counts, exact sighting times, species-by-location details or feeding frequency.
 
 | Entry | Date | Time | Area | Animal type | Count | Behaviour / context | Evidence status |
 |---|---|---|---|---|---|---|---|
-| Visit summary | 2026-11-20 | not recorded | Multiple campus surroundings: residential/hostel areas, cafeteria, Nescafe, roads, park and other listed areas | Dogs, cats, cows, calves | not recorded | General visit summary; informal food-giving by students and workers reported; no per-area breakdown supplied | User-reported summary |
+| Visit summary | 2026-11-20 | not recorded | Multiple campus surroundings: residential/hostel areas, cafeteria, Nescafe, roads, park and other listed areas | Dogs, cats, cows, calves | not recorded | General visit summary; informal food-giving by students and workers reported; no per-area breakdown supplied | My reported summary |
 
-Add at least 20 separate genuine entries if required by the assignment. Each row should represent an actual observation, confirmed food offer or confirmed volunteer availability. Do not split one general summary into invented rows.
+I still need to add at least 20 separate genuine entries if required by the assignment. Each row should represent an actual observation, confirmed food offer or confirmed volunteer availability. I will not split one general summary into invented rows.
 
-## 5. Timestamped photographs — pending
+## 5. My timestamped photographs — pending
 
-- **Photo 1:** not provided
+- **Photo 1:** not added
   - Actual capture timestamp: not recorded
   - Description: not recorded
 
-- **Photo 2:** not provided
+- **Photo 2:** not added
   - Actual capture timestamp: not recorded
   - Description: not recorded
 
-Only add photographs personally captured by the author. Avoid identifiable faces, number plates, private-home details and personal information unless explicit permission allows publication.
+I will add only photographs I personally captured. I will avoid identifiable faces, number plates, private-home details and personal information unless I have explicit permission to publish them.
 
-## 6. Data collection method — pending details
+## 6. My data collection method — details pending
 
-- **What one CSV row represents:** [one actual point check / confirmed food offer / confirmed volunteer availability]
-- **How counts were obtained:** not recorded
+- **What one CSV row represents:** one actual point check / confirmed food offer / confirmed volunteer availability
+- **How I obtained counts:** not recorded
 - **How food quantity and unit were confirmed:** not provided
 - **How volunteer availability was confirmed:** not provided
 - **Missing values:** use `not recorded`; do not guess.
-- **Total genuine entries in `backend/data.csv`:** to be checked after real records are added.
+- **Total genuine entries in `backend/data.csv`:** to be checked after I add real records
 
-Keep the real assignment dataset separate from `backend/demo-data.csv`. The latter contains synthetic UI/demo content and must not be reported as field evidence.
+I will keep the real assignment dataset separate from `backend/demo-data.csv`. The latter contains synthetic UI/demo content and must not be reported as my field evidence.
 
-## 7. Completion checklist
+## 7. My completion checklist
 
-- [x] Author-reported date, campus, duration, areas and animal types documented.
-- [x] Informal feeding by students and workers documented as an author-reported finding.
-- [ ] Confirm whether a specific student/worker was interviewed and record their role and actual statements.
-- [ ] Exact start/end time supplied, if available.
-- [ ] Per-area observation notes and actual counts recorded.
-- [ ] Two timestamped photographs added with permission.
-- [ ] At least 20 genuine entries added to the assignment dataset.
-- [ ] Author can explain where and how any selected CSV row was recorded.
-- [ ] Private contact details and sensitive location information removed before publishing.
+- [x] My reported date, campus, duration, areas and animal types documented.
+- [x] Informal feeding by students and workers documented as my reported finding.
+- [ ] Confirm whether I interviewed a specific student/worker and record their role and actual statements.
+- [ ] Add exact start/end time, if available.
+- [ ] Record per-area observation notes and actual counts.
+- [ ] Add two timestamped photographs with permission.
+- [ ] Add at least 20 genuine entries to the assignment dataset.
+- [ ] Be ready to explain where and how I recorded any selected CSV row.
+- [ ] Remove private contact details and sensitive location information before publishing.
