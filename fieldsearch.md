@@ -1,10 +1,10 @@
-# PawHelp — Field Search Sheet
+# PawHelp — My Field Search Sheet
 
-Use this sheet during the real 20-minute walk. It helps you decide what to observe and what to ask; it is not pre-filled evidence.
+I use this sheet to guide a real 20-minute walk. It helps me decide what to observe and what to ask; it is not pre-filled evidence.
 
-## Suggested public-area route
+## Public-area route I can use
 
-Check only places you can safely and legitimately access. Choose a manageable route and record the actual areas visited.
+I will check only places I can safely and legitimately access. I will choose a manageable route and record the areas I actually visit.
 
 - [ ] Nescafe / café surroundings
 - [ ] Cafeteria entrance or designated public area
@@ -15,34 +15,34 @@ Check only places you can safely and legitimately access. Choose a manageable ro
 - [ ] Park or public green area
 - [ ] Garbage / waste collection point (observe from a safe distance)
 
-## What to record
+## What I will record
 
-For each actual check, note:
+For each actual check, I will note:
 - Date and time
 - Public-area label (avoid private addresses)
 - Animal type (dog / cat / cow / calf / other)
-- Count only if you actually counted; otherwise write "not recorded"
+- Count only if I actually counted; otherwise write "not recorded"
 - Visible behaviour/context, without guessing the animal's condition
-- Whether the entry is direct observation or something a person told you
+- Whether the entry is my direct observation or something a person told me
 
-## Ask one person
+## Questions I can ask one person
 
 1. How do you currently coordinate animal feeding or care?
 2. What is the most difficult part of that process?
 3. Would a shared list of feeding points, food offers and volunteer timings help? Why or why not?
 
-Record their real name and role only with permission. Capture three specific statements and one surprise.
+I will record their real name and role only with permission. I will capture three specific statements and one surprise only if the person actually shares them.
 
 ## CSV capture template
 
-Copy this header into a separate working sheet and add only real entries:
+I can copy this header into a separate working sheet and add only real entries:
 
     entry_id,date,time,area_label,animal_type,count,behaviour_or_context,source,verification_status,notes
 
-Set source to direct_observation or participant_report. Use "not recorded" for unknown date/time/count only if the actual collection record genuinely lacks that value. Never make up timestamps or counts.
+I will set source to direct_observation or participant_report. I will use "not recorded" for an unknown date/time/count only if my actual collection record genuinely lacks that value. I will not make up timestamps or counts.
 
-## Important separation
+## Keep the datasets separate
 
-- backend/data.csv: real assignment records only.
-- backend/demo-data.csv: synthetic examples for testing the interface; never count these as fieldwork.
-- Photographs and interview notes must be personally collected with appropriate permission.
+- backend/data.csv: my real assignment records only.
+- backend/demo-data.csv: synthetic examples for testing the interface; I will never count these as fieldwork.
+- Photographs and interview notes must be personally collected by me with appropriate permission.
