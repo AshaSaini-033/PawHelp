@@ -1,14 +1,14 @@
 # Research Notes — PawHelp
 
-## 1. Problem statement (current hypothesis — validate during fieldwork)
+## 1. Problem statement (working hypothesis)
 
-1. Community animals are seen around shared campus and neighbourhood spaces such as cafeterias, hostels, roads, parks and waste points.
-2. Initial, informal sightings reported for this project include dogs near the Nescafe/cafeteria areas and parks, cats around hostels, and cows or calves near streets.
-3. These sightings suggest that people may notice animals needing care, but the project has not yet confirmed how feeders currently coordinate food, time, location or help.
-4. Without a confirmed point of contact and verified availability, a person willing to help may not know where help is needed or whether an offer is still useful.
+1. During a user-reported 20–30 minute visit to NIT Srinagar campus on 2026-11-20, the author covered the Nescafe area, cafeteria, hostel, college roads, school/college surroundings, streets, park and garbage points.
+2. The author reported the presence of dogs, cats, cows and calves during this visit.
+3. These observations establish the project context, but the author has not yet supplied per-area counts, exact sighting times or a breakdown of animal behaviour.
+4. The project still needs to establish through a real conversation how a feeder currently coordinates food, locations and volunteer availability, and what difficulty they actually face.
 5. PawHelp is a small community coordination prototype for recording feeding points, food offers and volunteer availability, then suggesting compatible matches.
 
-**Evidence boundary:** The location examples above are preliminary user-reported sightings, not a measured survey. No animal counts, feeder interview, feeding schedule or local service gap has been verified yet. Do not present the hypothesis as a proven local problem.
+**Evidence boundary:** Visit date, duration, areas and animal types above are author-reported. Exact times, counts, a feeder interview, photos and 20 individual raw records have not yet been documented here. Do not treat the working hypothesis as proof of a confirmed local coordination problem.
 
 ## 2. Existing alternatives and their fit
 
@@ -26,7 +26,7 @@ These are alternatives to investigate, not claims that they are absent or ineffe
 - Link: https://awbi.gov.in/uploads/regulations/163310162972Advisory%20for%20animal%20feeding%2025.4.2020.pdf
 - Relevant points: The advisory discusses maintaining personal hygiene, identifying a place and time for feeding, coordinating with local authorities where applicable, and following waste-management practices after feeding.
 - Relevance to PawHelp: A useful feeding-point record should capture a location and time, and the workflow should encourage clean-up rather than leaving food containers or litter behind.
-- Scope note: This is an advisory document; it does not establish the actual feeding rules or needs at the user's specific campus. Check current local instructions before acting.
+- Scope note: This is an advisory document; it does not establish the actual feeding rules or needs at NIT Srinagar. Check current local instructions before acting.
 
 ### Source 2 — World Organisation for Animal Health (WOAH): Terrestrial Animal Health Code, Chapter 7.7 — Dog population management
 
@@ -61,9 +61,9 @@ These are alternatives to investigate, not claims that they are absent or ineffe
 
 ## 6. Decision log — complete after speaking to the person
 
-- Person and role (with permission): [add]
-- Existing method they actually use: [add]
-- Specific difficulty they described: [add]
-- Feature they said would help: [add]
-- Feature they did not need: [add]
-- Final narrowed problem statement: [rewrite using their evidence]
+- Person and role (with permission): [not provided yet]
+- Existing method they actually use: [not provided yet]
+- Specific difficulty they described: [not provided yet]
+- Feature they said would help: [not provided yet]
+- Feature they did not need: [not provided yet]
+- Final narrowed problem statement: [rewrite using the interview evidence]
