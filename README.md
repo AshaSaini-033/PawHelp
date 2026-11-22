@@ -3,7 +3,7 @@
 # 🐾 PawHelp
 ### Community Animal Care & Feeding Coordination
 
-**A lightweight local coordination board for community dogs, cats, cows and other animals — connecting observed needs, confirmed food offers and willing helpers.**
+**I built PawHelp as a lightweight local coordination board for community dogs, cats, cows and other animals — connecting reported needs, confirmed food offers and willing helpers.**
 
 ![Node.js](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-339933?logo=nodedotjs&logoColor=white) ![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=20232a) ![CSV](https://img.shields.io/badge/Data-CSV-168C7B) ![Tests](https://img.shields.io/badge/Tests-Node%20test%20runner-43853d)
 
@@ -11,28 +11,28 @@
 
 ---
 
-## 1. The problem
+## 1. Why I started this project
 
-Community animals are visible around everyday places: hostels, cafeterias, parks, campus roads, school/college surroundings and garbage collection points. But sightings, feeding activity, food availability and volunteer time are often known by different people.
+During my visit to NIT Srinagar campus, I reported seeing dogs, cats, cows and calves across different campus surroundings — including hostel/residential areas, the cafeteria, Nescafe, roads and nearby public spaces. From what I know, students themselves feed animals, and campus workers sometimes provide food too.
 
-A person may notice animals near a place, another person may be willing to help, and someone else may have food — yet these pieces of information are not necessarily connected.
+I wanted to explore whether a simple shared tool could make it easier to keep track of where help may be needed, what food someone can offer and when a volunteer is available. I have not yet verified a campus-wide coordination gap, so PawHelp is an MVP built around that problem hypothesis.
 
-PawHelp is a small attempt to make local information easier to record and coordinate. It is not an animal rescue service, veterinary platform or guarantee that an animal will be fed.
+PawHelp is not an animal rescue service, veterinary platform or guarantee that an animal will be fed.
 
-## 2. Who it is for
+## 2. Who I designed it for
 
 - **Local feeders:** record a feeding point and its last confirmed visit.
 - **Food contributors:** record a real food offer, amount and expiry.
 - **Volunteers:** record when they are genuinely available.
 - **Community members:** report an animal sighting that may need follow-up.
 
-Use broad area labels (for example, “hostel area” or “nearby park”), not private home addresses. Use a person's name or alias only with permission.
+I use broad area labels (for example, “hostel area” or “nearby park”), not private home addresses. A person's name or alias should be used only with permission.
 
-## 3. Initial observations
+## 3. What I have observed so far
 
-The first entries below are based only on the locations and sightings described by the project owner. They are deliberately marked **unverified**. No dates, times, animal counts, feeder identities, food quantities or volunteer commitments have been invented.
+The initial entries below reflect the locations and sightings I reported from my visit. I have deliberately marked them **unverified**. I have not filled in dates, times, animal counts, feeder identities, food quantities or volunteer commitments that I did not record.
 
-| Area described | Animal / behaviour reported | What still needs checking |
+| Area I reported | Animal / behaviour reported | What I still need to check |
 |---|---|---|
 | Nescafe area | Dogs approach when they see food | Date, time, count, whether anyone feeds them regularly |
 | Cafeteria area | Dogs are around the cafeteria/food area | Date, time, count, feeder confirmation |
@@ -45,7 +45,7 @@ The first entries below are based only on the locations and sightings described 
 
 These eight preliminary reports are stored in `backend/data.csv` as `observation` rows. They are not eight verified feeding points, and they do not satisfy a requirement for 20 first-hand fieldwork records. The app's operational counts intentionally exclude these sightings.
 
-## 4. Product workflow
+## 4. How PawHelp works
 
 ![PawHelp workflow](docs/images/workflow.svg)
 
@@ -77,7 +77,7 @@ The moving marker below illustrates how information can travel from a community 
 
 ### Animal gallery in the app
 
-The dashboard includes an illustrative gallery for street dogs, cats, cows/calves and other community animals. These are emoji illustrations, not documentary photographs or evidence from fieldwork. Only real, consented field photos should be added to the `evidence/` folder.
+The dashboard includes an illustrative gallery for street dogs, cats, cows/calves and other community animals. These are emoji illustrations, not documentary photographs or evidence from my field visit. I will add only real, consented field photos to the `evidence/` folder.
 
 ## 5. Matching logic
 
@@ -97,7 +97,7 @@ The current implementation does not combine partial offers, estimate walking dis
 
 ## 6. Data model
 
-All records are stored in the inspectable `backend/data.csv`.
+I store all records in the inspectable `backend/data.csv`.
 
 | Record type | Purpose | Required real-world confirmation |
 |---|---|---|
@@ -106,7 +106,7 @@ All records are stored in the inspectable `backend/data.csv`.
 | `food_offer` | Food that someone genuinely offers | Contributor confirms type, quantity and expiry |
 | `volunteer` | A helper's time window | Volunteer confirms availability |
 
-The initial eight `observation` rows are marked `unverified`; blank timestamps/counts are intentional. The React app's matching engine uses the three coordination record types, not unverified sightings. Do not convert an animal sighting into a food need, donor offer or volunteer record without confirmation.
+The initial eight `observation` rows are marked `unverified`; blank timestamps/counts are intentional. The React app's matching engine uses the three coordination record types, not unverified sightings. I do not convert an animal sighting into a food need, donor offer or volunteer record without confirmation.
 
 ### CSV columns
 
@@ -221,21 +221,21 @@ Example request shape for a feeding point (replace all values with a real, confi
 
 ## 12. Tests
 
-The test suite covers matching compatibility and failure cases, including area mismatch, insufficient quantity, expired offers, unavailable volunteers, overdue reminders and invalid quantities. Run `npm test` before submission.
+The test suite covers matching compatibility and failure cases, including area mismatch, insufficient quantity, expired offers, unavailable volunteers, overdue reminders and invalid quantities. I still need to run `npm test` before treating the test suite as verified.
 
 ## 13. Safety, privacy and limitations
 
 - A sighting does not prove that an animal is hungry or needs feeding.
-- Only record food that an experienced local feeder confirms is suitable.
-- Do not provide veterinary advice or attempt treatment based on this app.
-- Do not feed spoiled food or place food where it creates road/public safety hazards.
-- Do not publish private addresses, phone numbers or personal information.
-- Respect campus/school rules, local permissions and residents.
+- I record only food that an experienced local feeder confirms is suitable.
+- PawHelp does not provide veterinary advice or support treatment decisions.
+- I should not encourage feeding spoiled food or placing food where it creates road/public safety hazards.
+- I do not publish private addresses, phone numbers or personal information.
+- I need to respect campus/school rules, local permissions and residents.
 - A match is a suggestion, not an assignment or proof of delivery.
 - If no volunteer is available, the need remains unresolved.
 - Stale, duplicate or incorrect records must be checked with the contributor.
 - CSV is suitable for a small prototype, not concurrent large-scale production use.
-- No authentication or role-based access control is implemented yet.
+- I have not implemented authentication or role-based access control yet.
 
 ## 14. Scope decisions
 
@@ -243,18 +243,18 @@ The test suite covers matching compatibility and failure cases, including area m
 
 **Not included:** GPS tracking, maps, chat, push notifications, payments, rescue dispatch, veterinary triage, diet recommendations, automatic proof of delivery, AI image recognition or combining partial food offers.
 
-These exclusions keep the first version small enough to test with one local community.
+I kept these exclusions so I could focus the first version on a small workflow that can be tested with one local community.
 
-## 15. Fieldwork still required
+## 15. Fieldwork and submission work still pending
 
-The current initial sightings are preliminary user-reported notes only. Before treating PawHelp as a field-tested solution:
+My initial sightings are preliminary notes only. Before I describe PawHelp as a field-tested solution, I still need to:
 
 - [ ] Visit the selected public locations and note date, time and approximate animal counts.
 - [ ] Speak to at least one named feeder/coordinator (with consent) and record their role and exact relevant statements.
 - [ ] Ask what coordination problem they actually face and whether this tool would help.
-- [ ] Collect the assignment-required 20+ real records; do not generate, download or infer them.
+- [ ] Collect the assignment-required 20+ real records; I must not generate, download or infer them.
 - [ ] Capture two timestamped field photos only with appropriate permission and without exposing private information.
-- [ ] Update `research.md`, `fieldwork.md` and `reflection.md` using your own work.
+- [ ] Update `research.md`, `fieldwork.md` and `reflection.md` using my own work.
 - [ ] Record the required three-minute screen demo and link it here.
 - [ ] Include actual AI chat exports if required; summary notes are not verbatim chat transcripts.
 
